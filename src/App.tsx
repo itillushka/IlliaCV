@@ -9,22 +9,26 @@ import { Languages } from './components/Languages'
 import { Additional } from './components/Additional'
 import { Footer } from './components/Footer'
 import { ParticlesBackground } from './components/ParticlesBackground'
+import { MobileMessage } from './components/MobileMessage'
 
 function App() {
   return (
-    <div className="relative flex flex-col w-full min-h-full bg-[var(--color-bg-dark)] font-primary">
-      <ParticlesBackground />
-      <Hero />
-      <Profile />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Certifications />
-      <Languages />
-      <Additional />
-      <Footer />
-    </div>
+    <>
+      <MobileMessage />
+      <div className="relative hidden md:flex flex-col w-full min-h-full bg-[var(--color-bg-dark)] font-primary">
+        <ParticlesBackground />
+        <Hero />
+        <Profile />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Certifications />
+        <Languages />
+        <Additional />
+        <Footer />
+      </div>
+    </>
   )
 }
 
