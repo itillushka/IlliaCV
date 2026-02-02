@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illia Pastushok - CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 40px 50px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 13px;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      display: flex;
+      gap: 20px;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .contact a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    /* Profile */
+    .profile p {
+      font-size: 11px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .skill-item {
+      padding: 10px;
+      background: #f8f8f8;
+      border-left: 2px solid #1a1a1a;
+    }
+
+    .skill-item h3 {
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .skill-item p {
+      font-size: 9px;
+      color: #555;
+    }
+
+    /* Experience */
+    .experience-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .experience-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .exp-date {
+      width: 100px;
+      flex-shrink: 0;
+    }
+
+    .exp-date .year {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .exp-date .range {
+      font-size: 9px;
+      color: #666;
+    }
+
+    .exp-content h3 {
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .exp-content .company {
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .exp-content p {
+      font-size: 10px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .project-item {
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .project-item .badge {
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
+    .project-item h3 {
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .project-item p {
+      font-size: 9px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .project-item .stat {
+      font-size: 9px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .project-item .tech {
+      font-size: 8px;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    /* Education */
+    .education-content h3 {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .education-content .school {
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .education-content .period {
+      font-size: 10px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .education-content .topics {
+      display: flex;
+      gap: 30px;
+    }
+
+    .education-content .topics ul {
+      list-style: none;
+      font-size: 9px;
+      color: #555;
+    }
+
+    .education-content .topics li {
+      margin-bottom: 2px;
+    }
+
+    .education-content .topics li::before {
+      content: "• ";
+    }
+
+    /* Certifications */
+    .cert-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cert-item .dot {
+      width: 6px;
+      height: 6px;
+      background: #1a1a1a;
+      flex-shrink: 0;
+    }
+
+    .cert-item .cert-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cert-item .cert-name {
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .cert-item .cert-issuer {
+      font-size: 9px;
+      color: #666;
+    }
+
+    /* Languages & Additional */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .lang-item .name {
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .lang-item .level {
+      font-size: 10px;
+      color: #555;
+    }
+
+    .additional-list {
+      font-size: 10px;
+      color: #444;
+    }
+
+    .additional-list li {
+      margin-bottom: 4px;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        padding: 20px 30px;
+        font-size: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ILLIA PASTUSHOK</h1>
+    <p class="title">Middle Machine Learning Engineer & AI Tech Lead</p>
+    <div class="contact">
+      <span>il.pastushok@gmail.com</span>
+      <span>|</span>
+      <a href="https://github.com/itilushka-red" target="_blank">github.com/itilushka-red</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/illia-pastushok-78a44b250/" target="_blank">LinkedIn</a>
+      <span>|</span>
+      <span>Wroclaw, Poland</span>
+    </div>
+  </header>
+
+  <section class="profile">
+    <h2>Profile</h2>
+    <p>Middle Machine Learning Engineer and AI Team Lead with 4+ years of hands-on experience designing, building, and deploying scalable AI/ML systems from scratch to production. Proven expertise in LLMs, RAG systems, computer vision, predictive modeling, and optimization. Delivered $800K+ in annual savings through AI-driven quality control systems and led 10+ production ML projects.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Technical Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <h3>Programming & Data</h3>
+        <p>Python, SQL, Pandas, NumPy</p>
+      </div>
+      <div class="skill-item">
+        <h3>Machine Learning & AI</h3>
+        <p>PyTorch, TensorFlow, Computer Vision, NLP</p>
+      </div>
+      <div class="skill-item">
+        <h3>LLMs & GenAI</h3>
+        <p>RAG, Semantic Search, Prompt Engineering, LangGraph</p>
+      </div>
+      <div class="skill-item">
+        <h3>Cloud & MLOps</h3>
+        <p>AWS, Docker, Kubernetes, CI/CD</p>
+      </div>
+      <div class="skill-item">
+        <h3>Databases</h3>
+        <p>PostgreSQL, MongoDB, Neo4j, Vector DBs</p>
+      </div>
+      <div class="skill-item">
+        <h3>Backend / Fullstack</h3>
+        <p>FastAPI, Django, REST APIs, React</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <div class="exp-date">
+        <div class="year">2025</div>
+        <div class="range">— Present</div>
+      </div>
+      <div class="exp-content">
+        <h3>Team Lead / Middle AI Engineer</h3>
+        <div class="company">CONE RED • Wroclaw, Poland</div>
+        <p>Lead design and implementation of enterprise-grade AI solutions. Architected LLM-powered systems including RAG pipelines and multi-agent workflows. Established MLOps standards for CI/CD and automated deployment.</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-date">
+        <div class="year">2024</div>
+        <div class="range">— 2025</div>
+      </div>
+      <div class="exp-content">
+        <h3>AI Engineer</h3>
+        <div class="company">CONE RED • Wroclaw, Poland</div>
+        <p>Developed production ML models for computer vision, NLP, and recommendation systems. Integrated LLM APIs (GPT-5, Claude) into business workflows. Implemented containerized ML services with Docker and Kubernetes.</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-date">
+        <div class="year">2023</div>
+        <div class="range">— 2024</div>
+      </div>
+      <div class="exp-content">
+        <h3>Quality Assurance Engineer</h3>
+        <div class="company">Star Global • Wroclaw, Poland</div>
+        <p>Ensured software quality and regulatory compliance for enterprise and medical-grade systems. Authored and executed 300+ test cases; supported audits with zero critical findings.</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-date">
+        <div class="year">2020</div>
+        <div class="range">— 2021</div>
+      </div>
+      <div class="exp-content">
+        <h3>Computer Vision Software Engineer (Intern)</h3>
+        <div class="company">National Center, Academy of Sciences of Ukraine • Kyiv</div>
+        <p>Built OpenCV-based computer vision pipelines for scientific image analysis. Collaborated with researchers to translate scientific requirements into production-ready tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <div class="badge">MANUFACTURING • AI • CV</div>
+        <h3>AI Quality Control Engine</h3>
+        <p>Enterprise CV system monitoring 50+ machines processing 10,000+ units daily. Achieved 92% defect detection accuracy.</p>
+        <div class="stat">$800K Annual Savings</div>
+        <div class="tech">Python • TensorFlow • OpenCV • AWS</div>
+      </div>
+
+      <div class="project-item">
+        <div class="badge">PHARMACEUTICAL • LLM • RAG</div>
+        <h3>AI Recommendation & Decision Support</h3>
+        <p>LLM-powered recommendation engine analyzing 10,000+ medications. Processes 500+ daily queries with &lt;2s latency.</p>
+        <div class="stat">500+ Daily Queries</div>
+        <div class="tech">GPT-5 • Pinecone • Neo4j • FastAPI • AWS</div>
+      </div>
+
+      <div class="project-item">
+        <div class="badge">FINTECH • AUTOMATION • AI</div>
+        <h3>Investment Due Diligence Platform</h3>
+        <p>Automated company intelligence aggregation using AI. Reduced analysis time from 5 hours to 5 minutes.</p>
+        <div class="stat">60X Faster Analysis</div>
+        <div class="tech">Python • LLMs • Web Scraping • PostgreSQL</div>
+      </div>
+
+      <div class="project-item">
+        <div class="badge">HEALTHCARE • AI • CV</div>
+        <h3>Pediatric Myopia Treatment Platform</h3>
+        <p>AI-driven OCT analysis system for personalized myopia treatment in children. Processed 2,000+ scans.</p>
+        <div class="stat">94% Accuracy</div>
+        <div class="tech">Python • TensorFlow • Medical Imaging</div>
+      </div>
+
+      <div class="project-item">
+        <div class="badge">HR • AI • NLP</div>
+        <h3>Political Candidate Profiling Platform</h3>
+        <p>Multi-stage AI assessment platform for candidate evaluation. Reduced screening time by 70%.</p>
+        <div class="stat">70% Time Saved</div>
+        <div class="tech">Python • GPT-4 • NLP • Django • React</div>
+      </div>
+
+      <div class="project-item">
+        <div class="badge">B2B • GRAPH • AI</div>
+        <h3>Graph-Based Business Matchmaking</h3>
+        <p>B2B platform using graph database to connect businesses. Mapped 5,000+ businesses with 82% match rate.</p>
+        <div class="stat">$2M+ Deal Value</div>
+        <div class="tech">Python • Neo4j • VoyageAI • FastAPI</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <div class="education-content">
+      <h3>BSc in Medical Informatics / Biomedical Engineering</h3>
+      <div class="school">Wroclaw University of Science and Technology</div>
+      <div class="period">2022 — 2026</div>
+      <div class="topics">
+        <ul>
+          <li>Machine Learning & Data Science</li>
+          <li>Medical Imaging & Computer Vision</li>
+        </ul>
+        <ul>
+          <li>Statistical Modeling & Signal Processing</li>
+          <li>Full-Stack & Backend Engineering</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <div class="dot"></div>
+        <div class="cert-content">
+          <span class="cert-name">Python for Data Science, AI & Development</span>
+          <span class="cert-issuer">IBM</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="dot"></div>
+        <div class="cert-content">
+          <span class="cert-name">Introduction to Artificial Intelligence</span>
+          <span class="cert-issuer">IBM</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="dot"></div>
+        <div class="cert-content">
+          <span class="cert-name">AWS Cloud Practitioner</span>
+          <span class="cert-issuer">Amazon Web Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-column">
+    <div class="languages">
+      <h2>Languages</h2>
+      <div class="lang-item">
+        <span class="name">English</span>
+        <span class="level">C1 — Advanced</span>
+      </div>
+      <div class="lang-item">
+        <span class="name">Polish</span>
+        <span class="level">Upper-Intermediate</span>
+      </div>
+      <div class="lang-item">
+        <span class="name">Ukrainian / Russian</span>
+        <span class="level">Native</span>
+      </div>
+    </div>
+
+    <div class="additional">
+      <h2>Additional</h2>
+      <ul class="additional-list">
+        <li>Comfortable working in Agile/Scrum environments</li>
+        <li>Experienced in presenting technical solutions to stakeholders</li>
+        <li>Eligible to work in the EU</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
