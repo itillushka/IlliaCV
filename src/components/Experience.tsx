@@ -11,7 +11,7 @@ const experiences = [
   },
   {
     year: '2025',
-    range: 'FEB — SEP',
+    range: 'FEB — AUG',
     role: 'AI Engineer',
     company: 'CONE RED • Wroclaw, Poland',
     description: 'Developed production ML models for computer vision, NLP, and recommendation systems. Integrated LLM APIs (GPT-5, Claude) into business workflows. Implemented containerized ML services with Docker and Kubernetes.',
