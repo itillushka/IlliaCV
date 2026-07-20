@@ -10,8 +10,8 @@ const certifications = [
     issuer: 'IBM',
   },
   {
-    name: 'AWS Cloud Practitioner',
-    issuer: 'AMAZON WEB SERVICES',
+    name: 'Claude Certified Architect - Foundations',
+    issuer: 'ANTHROPIC',
   },
   {
     name: 'TensorFlow Developer Certificate',

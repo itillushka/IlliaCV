@@ -15391,7 +15391,7 @@
                                   "id": "Oy0k7",
                                   "name": "cert3Name",
                                   "fill": "#FFFFFF",
-                                  "content": "AWS Cloud Practitioner",
+                                  "content": "Claude Certified Architect - Foundations",
                                   "fontFamily": "Inter",
                                   "fontSize": 15,
                                   "fontWeight": "500"
@@ -15401,7 +15401,7 @@
                                   "id": "2u42m",
                                   "name": "cert3Issuer",
                                   "fill": "#64748B",
-                                  "content": "Amazon Web Services",
+                                  "content": "Anthropic",
                                   "fontFamily": "JetBrains Mono",
                                   "fontSize": 12,
                                   "fontWeight": "500"
@@ -18155,7 +18155,7 @@
                           "id": "W3D9m",
                           "name": "cert2cName",
                           "fill": "#FFFFFF",
-                          "content": "AWS Cloud Practitioner",
+                          "content": "Claude Certified Architect - Foundations",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "600"
@@ -18165,7 +18165,7 @@
                           "id": "ylo27",
                           "name": "cert2cIssuer",
                           "fill": "#666666",
-                          "content": "AMAZON WEB SERVICES",
+                          "content": "ANTHROPIC",
                           "fontFamily": "Inter",
                           "fontSize": 11,
                           "fontWeight": "500",
