@@ -143,7 +143,7 @@ export function Hero() {
 
         {/* Title - Fade in */}
         <p className="text-[16px] font-medium text-[#CCCCCC] tracking-[2px] font-primary animate-initial animate-fade-in delay-1100">
-          Machine Learning Engineer &amp; AI Tech Lead
+          Machine Learning Engineer &amp; AI Team Lead
         </p>
 
         {/* Divider - Expand width */}
@@ -184,7 +184,7 @@ export function Hero() {
       <div className="absolute right-[80px] top-[300px] flex flex-col gap-[32px] w-[280px] border-l-2 border-[var(--color-primary)] pl-[32px] py-[32px] z-10">
         <div className="flex flex-col gap-[8px] animate-initial animate-fade-in-right delay-1000">
           <span className="text-[48px] font-bold text-[var(--color-text-white)] tracking-[-2px] font-primary stat-hover cursor-default">
-            4+
+            3+
           </span>
           <span className="text-[9px] font-semibold text-[#BBBBBB] tracking-[3px] font-primary">
             YEARS EXPERIENCE

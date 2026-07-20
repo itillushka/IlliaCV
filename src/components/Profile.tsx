@@ -28,7 +28,7 @@ export function Profile() {
           Engineering AI solutions that drive real business impact.
         </h2>
         <p className={`text-[15px] font-normal text-[var(--color-text-muted)] leading-[1.8] font-primary max-w-[700px] transition-all duration-700 delay-400 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          Machine Learning Engineer and AI Team Lead with 4+ years of hands-on experience designing, building, and deploying scalable AI/ML systems from scratch to production. Proven expertise in LLMs, RAG systems, computer vision, predictive modeling, and optimization.
+          Machine Learning Engineer and AI Team Lead with 3+ years of commercial experience designing, building, and deploying scalable AI/ML systems from scratch to production. Proven expertise in LLMs, RAG systems, computer vision, predictive modeling, and optimization.
         </p>
       </div>
 

@@ -3,23 +3,23 @@ import { useInView } from '../hooks/useInView'
 const experiences = [
   {
     year: '2025',
-    range: '— PRESENT',
+    range: 'AUG — PRESENT',
     role: 'Team Lead / AI Engineer',
     company: 'CONE RED • Wroclaw, Poland',
     description: 'Lead design and implementation of enterprise-grade AI solutions. Architected LLM-powered systems including RAG pipelines and multi-agent workflows. Established MLOps standards for CI/CD and automated deployment.',
     current: true,
   },
   {
-    year: '2024',
-    range: '— 2025',
+    year: '2025',
+    range: 'FEB — SEP',
     role: 'AI Engineer',
     company: 'CONE RED • Wroclaw, Poland',
     description: 'Developed production ML models for computer vision, NLP, and recommendation systems. Integrated LLM APIs (GPT-5, Claude) into business workflows. Implemented containerized ML services with Docker and Kubernetes.',
     current: false,
   },
   {
-    year: '2023',
-    range: '— 2024',
+    year: '2024',
+    range: 'FEB — FEB 2025',
     role: 'Quality Assurance Engineer',
     company: 'Star Global • Wroclaw, Poland',
     description: 'Ensured software quality and regulatory compliance for enterprise and medical-grade systems. Authored and executed 300+ test cases; supported audits with zero critical findings. Strengthened understanding of data quality, risk management, and security, directly applicable to enterprise AI systems.',
@@ -28,7 +28,7 @@ const experiences = [
   },
   {
     year: '2020',
-    range: '— 2021',
+    range: 'NOV — DEC 2021',
     role: 'Computer Vision Software Engineer (Intern)',
     company: 'National Center, Academy of Sciences of Ukraine • Kyiv',
     description: 'Built OpenCV-based computer vision pipelines for scientific image analysis. Collaborated with researchers to translate scientific requirements into production-ready tools.',

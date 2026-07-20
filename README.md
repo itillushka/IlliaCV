@@ -1,6 +1,6 @@
 # Illia Pastushok - CV Portfolio
 
-Personal portfolio website showcasing my experience as a Machine Learning Engineer & AI Tech Lead.
+Personal portfolio website showcasing my experience as a Machine Learning Engineer & AI Team Lead.
 
 ## Tech Stack
 

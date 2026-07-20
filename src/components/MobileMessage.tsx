@@ -9,7 +9,7 @@ export function MobileMessage() {
           ILLIA PASTUSHOK
         </h1>
         <p className="text-sm text-[var(--color-text-muted)] tracking-[2px] font-primary">
-          Machine Learning Engineer & AI Tech Lead
+          Machine Learning Engineer & AI Team Lead
         </p>
       </div>
       <div className="flex flex-col items-center gap-2">
